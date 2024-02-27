@@ -1,0 +1,48 @@
+{
+    "name": "@master/colors",
+    "type": "module",
+    "scripts": {
+        "build": "techor build \"src/**/*.ts\"",
+        "dev": "pnpm build --watch",
+        "test": "jest",
+        "lint": "eslint src",
+        "check:type": "tsc --noEmit"
+    },
+    "license": "MIT",
+    "description": "A new package",
+    "author": "Aoyue Design LLC.",
+    "homepage": "https://github.com/techor-dev",
+    "bugs": {
+        "url": "https://github.com/master-co/colors/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/master-co/colors.git",
+        "directory": "packages/template"
+    },
+    "keywords": [],
+    "sideEffects": false,
+    "main": "./dist/index.cjs",
+    "esnext": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./fill-color-scale": {
+            "require": "./dist/fill-color-scale.cjs",
+            "import": "./dist/fill-color-scale.mjs",
+            "types": "./dist/fill-color-scale.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    }
+}
