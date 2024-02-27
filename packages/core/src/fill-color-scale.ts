@@ -15,24 +15,25 @@ export default function fillColorScale(data: any) {
 
     if (!isLevelMore100 && (!hasMainRgb || Object.keys(data).length > 1)) {
         let startLevel = 0,
-            startRgb: any = '0' in data
+            startRgb = '0' in data
                 ? hexToRgb(data[0])
                 : [0, 0, 0],
             endLevel: number,
-            endRgb: any
+            endRgb: any[]
 
         const newLevels: number[] = []
         const generateColor = () => {
             const levelDiff = endLevel - startLevel
-            const rgbDiff = endRgb.map((color: any, i: any) => (color - startRgb[i]) / levelDiff)
+            const rgbDiff = endRgb.map((color: number, i: number) => (color - startRgb[i]) / levelDiff)
             for (const eachNewLevel of newLevels) {
                 const currentLevelDiff = eachNewLevel - startLevel
-                const newRgb = startRgb.map((color: any, i: any) => Math.round(color + rgbDiff[i] * currentLevelDiff))
-                data[eachNewLevel] = '#' + rgbToHex(newRgb[0], newRgb[1], newRgb[2])
+                const newRgb = startRgb.map((color, i) => Math.round(color + rgbDiff[i] * currentLevelDiff))
+                data[eachNewLevel] = rgbToHex(newRgb[0], newRgb[1], newRgb[2])
             }
         }
 
         for (let i = 1; i < 100; i++) {
+            const isEven = i % 2 === 0
             if (i in data) {
                 if (newLevels.length) {
                     endLevel = i
@@ -48,7 +49,7 @@ export default function fillColorScale(data: any) {
                 }
 
                 startLevel = i
-            } else {
+            } else if (isEven) {
                 newLevels.push(i)
             }
         }
@@ -76,5 +77,5 @@ function rgbToHex(r: number, g: number, b: number) {
 
 function hexToRgb(hex: string) {
     const aRgbHex = hex.match(/.{1,2}/g) as RegExpMatchArray
-    return [parseInt(aRgbHex[0], 16), parseInt(aRgbHex[1], 16), parseInt(aRgbHex[2], 16)];
+    return [parseInt(aRgbHex[0], 16), parseInt(aRgbHex[1], 16), parseInt(aRgbHex[2], 16)]
 }
