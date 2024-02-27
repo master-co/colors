@@ -9,18 +9,23 @@
         "check:type": "tsc --noEmit"
     },
     "license": "MIT",
-    "description": "A new package",
+    "description": "A crafted color system for beautiful user interfaces",
     "author": "Aoyue Design LLC.",
-    "homepage": "https://github.com/techor-dev",
+    "homepage": "https://css.master.co/docs/colors",
     "bugs": {
         "url": "https://github.com/master-co/colors/issues"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/master-co/colors.git",
-        "directory": "packages/template"
+        "directory": "packages/core"
     },
-    "keywords": [],
+    "keywords": [
+        "colors",
+        "color-system",
+        "color-palette",
+        "design-system"
+    ],
     "sideEffects": false,
     "main": "./dist/index.cjs",
     "esnext": "./dist/index.mjs",
