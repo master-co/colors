@@ -9,7 +9,7 @@ pnpm build
 ```
 Split a new terminal and switch to the target directory for testing to avoid running tests from other packages:
 ```bash
-cd packages/css
+cd packages/core
 ```
 
 ## Testing
@@ -39,7 +39,7 @@ pnpm type-check
 ```
 
 ## Commit Checking
-Follow the [Techor Conventional Commits](https://github.com/master-co/colors/tree/main/packages/conventional-commits)
+Follow the [Techor Conventional Commits](https://github.com/techor-dev/techor/tree/main/packages/conventional-commits)
 ```bash
 pnpm commit-check
 ```
