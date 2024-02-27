@@ -59,8 +59,7 @@
 
 </div>
 
-## Predecessor
-Starting from the [Master CSS v1.38](https://github.com/master-co/css/releases/tag/v1.37.8), **Master Colors v1** has been separated into an independent product.
+> Master Colors v1 is the predecessor to the color palette of Master CSS v1.
 
 ## Documentation
 Visit [v1.css.master.co/docs/colors](https://v1.css.master.co/docs/colors) to preview the all colors.
