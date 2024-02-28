@@ -2,14 +2,23 @@
 <div align="center">
 
 <p align="center">
-    <a href="https://master.co">
-        <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/33840671/205238939-3cf526f7-8d92-4fa0-8ca3-6c7e4c545f9c.svg">
-            <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg">
-            <img alt="Master" src="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg" width="100%">
-        </picture>
-    </a>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/33840671/205238939-3cf526f7-8d92-4fa0-8ca3-6c7e4c545f9c.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg">
+        <img alt="Master" src="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg" width="100%">
+    </picture>
 </p>
+
+<br>
+
+<p align="center">
+    <picture>            
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/master-co/colors/assets/33840671/7b3fc175-97d3-41bd-9d2f-a45e6ca46014">
+        <source media="(prefers-color-scheme: light)" srcset="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f">
+        <img alt="Master Colors" src="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f" width="100%">
+    </picture>
+</p>
+
 <p align="center">A crafted color system for beautiful user interfaces</p>
 
 <p align="center">
