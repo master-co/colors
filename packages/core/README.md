@@ -59,49 +59,55 @@
 
 </div>
 
-> Master Colors v1 is the predecessor to the color palette of Master CSS v1.
-
 ## Documentation
-Visit [v1.css.master.co/docs/colors](https://v1.css.master.co/docs/colors) to preview the all colors.
+Visit [css.master.co/docs/colors](https://css.master.co/docs/colors) to preview the all colors.
 
 ## Getting Started
-Install the Master Colors v1 via package managers:
+Install the Master Colors v2 via package managers:
 ```bash
-npm install @master/colors@1
+npm install @master/colors@rc
 ```
 Import the colors:
 ```js
 import colors from '@master/colors'
 ```
-Each color in v1 contains `2~98` shades.
+The `colors` object contains hue colors on a scale of `5~95` and [Master CSS color variables](https://rc.css.master.co/docs/colors#add-colors-by-theme):
 ```js
 {
-    red {
-        2: '#0b0000',
-        4: '#150000',
+    blue: {
+        5: '#e5f3fe',
+        10: '#dbf2fe',
         ...,
-        98: '#fffcfc',
-        '': '#d11a1e'
+        95: '#102069',
+        '@light': '$(blue-60)',
+        '@dark': '$(blue-50)'
     },
-    gray: {
-        ...
+    invert: {
+        '@light': '#000000',
+        '@dark': '#ffffff'
     },
     ...
 }
 ```
-The exported `fillColorScale(colors)` helps you fill `2~98` shades with custom colors:
+You can also access filtered hue colors:
 ```js
-import fillColorScale from '@master/colors/fill-color-scale'
-
-const customColors = fillColorScale({
-    10: '#ff3366',
-    20: '#ff4488',
-    ...
-    90: '#ff3311'
-})
+import hueColors from '@master/colors/hue'
 ```
-
-Want to upgrade to Master CSS v2? Check out the guide [Migrating from Master CSS 1.0](https://rc.css.master.co/docs/migration).
+```js
+{
+    blue: {
+        5: '#e5f3fe',
+        10: '#dbf2fe',
+        ...,
+    },
+    pink: {
+        5: '#fef1f9',
+        10: '#fee9f8',
+        ...,
+    },
+    ...
+}
+```
 
 ## Community
 The Master community can be found here:
