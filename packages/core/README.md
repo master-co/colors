@@ -58,7 +58,7 @@
 <br>
 
 <p align="center">
-    <picture>            
+    <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://github.com/master-co/colors/assets/33840671/7b3fc175-97d3-41bd-9d2f-a45e6ca46014">
         <source media="(prefers-color-scheme: light)" srcset="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f">
         <img alt="Master Colors" src="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f" width="100%">
@@ -68,7 +68,7 @@
 </div>
 
 ## Documentation
-Visit [css.master.co/docs/colors](https://css.master.co/docs/colors) to preview the all colors.
+Visit [rc.css.master.co/docs/colors](https://rc.css.master.co/docs/colors) to preview the all colors.
 
 ## Getting Started
 Install the Master Colors v2 via package managers:
