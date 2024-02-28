@@ -11,6 +11,10 @@
 
 <br>
 
+<p align="center">A crafted color system for beautiful user interfaces</p>
+
+<br>
+
 <p align="center">
     <picture>            
         <source media="(prefers-color-scheme: dark)" srcset="https://github.com/master-co/colors/assets/33840671/7b3fc175-97d3-41bd-9d2f-a45e6ca46014">
@@ -18,8 +22,6 @@
         <img alt="Master Colors" src="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f" width="100%">
     </picture>
 </p>
-
-<p align="center">A crafted color system for beautiful user interfaces</p>
 
 <p align="center">
     <a aria-label="GitHub release (latest by date including pre-releases)" href="https://github.com/master-co/colors/releases">
