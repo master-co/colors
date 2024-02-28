@@ -73,15 +73,15 @@ Import the colors:
 ```js
 import colors from '@master/colors'
 ```
-The structure of the `colors` object in v1 uses hex color codes without the `#` prefix as values, and the color scale is `2~98`:
+Each color in v1 contains `2~98` shades.
 ```js
 {
     red {
-        2: '0b0000',
-        4: '150000',
+        2: '#0b0000',
+        4: '#150000',
         ...,
-        98: 'fffcfc',
-        '': 'd11a1e'
+        98: '#fffcfc',
+        '': '#d11a1e'
     },
     gray: {
         ...
@@ -89,15 +89,15 @@ The structure of the `colors` object in v1 uses hex color codes without the `#` 
     ...
 }
 ```
-The exported `fillColorScale(colors)` helps you fill `2~98` with custom colors:
+The exported `fillColorScale(colors)` helps you fill `2~98` shades with custom colors:
 ```js
 import fillColorScale from '@master/colors/fill-color-scale'
 
 const customColors = fillColorScale({
-    10: 'ff3366',
-    20: 'ff4488',
+    10: '#ff3366',
+    20: '#ff4488',
     ...
-    90: 'ff3311'
+    90: '#ff3311'
 })
 ```
 
