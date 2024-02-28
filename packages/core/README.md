@@ -101,7 +101,7 @@ const customColors = fillColorScale({
 })
 ```
 
-Want to upgrade to Master CSS v2? Check out the guide [Migrating from Master CSS 1.0](https://rc.css.master.co/docs/migration).
+Want to upgrade to Master CSS v2? Check out the guide [Migrating from Master CSS 1.0](https://rc.css.master.co/docs/migration/v1).
 
 ## Community
 The Master community can be found here:
