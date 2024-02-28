@@ -28,7 +28,7 @@ export default function fillColorScale(data: any) {
             for (const eachNewLevel of newLevels) {
                 const currentLevelDiff = eachNewLevel - startLevel
                 const newRgb = startRgb.map((color, i) => Math.round(color + rgbDiff[i] * currentLevelDiff))
-                data[eachNewLevel] = rgbToHex(newRgb[0], newRgb[1], newRgb[2])
+                data[eachNewLevel] = '#' + rgbToHex(newRgb[0], newRgb[1], newRgb[2])
             }
         }
 
