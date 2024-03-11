@@ -2,13 +2,11 @@
 <div align="center">
 
 <p align="center">
-    <a href="https://master.co">
-        <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/33840671/205238939-3cf526f7-8d92-4fa0-8ca3-6c7e4c545f9c.svg">
-            <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg">
-            <img alt="Master" src="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg" width="100%">
-        </picture>
-    </a>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/33840671/205238939-3cf526f7-8d92-4fa0-8ca3-6c7e4c545f9c.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg">
+        <img alt="Master" src="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg" width="100%">
+    </picture>
 </p>
 <p align="center">A crafted color system for beautiful user interfaces</p>
 
@@ -57,51 +55,67 @@
     </a>
 </p>
 
+<br>
+
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/master-co/colors/assets/33840671/7b3fc175-97d3-41bd-9d2f-a45e6ca46014">
+        <source media="(prefers-color-scheme: light)" srcset="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f">
+        <img alt="Master Colors" src="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f" width="100%">
+    </picture>
+</p>
+
 </div>
 
-> Master Colors v1 is the predecessor to the color palette of Master CSS v1.
-
 ## Documentation
-Visit [v1.css.master.co/docs/colors](https://v1.css.master.co/docs/colors) to preview the all colors.
+Visit [rc.css.master.co/docs/colors](https://rc.css.master.co/docs/colors) to preview the all colors.
 
 ## Getting Started
-Install the Master Colors v1 via package managers:
+Install the Master Colors v2 via package managers:
 ```bash
-npm install @master/colors@1
+npm install @master/colors@rc
 ```
 Import the colors:
 ```js
 import colors from '@master/colors'
 ```
-Each color in v1 contains `2~98` shades.
+The `colors` object contains hue colors on a scale of `5~95` and [Master CSS color variables](https://rc.css.master.co/docs/colors#add-colors-by-theme):
 ```js
 {
-    red {
-        2: '#0b0000',
-        4: '#150000',
+    blue: {
+        5: '#e5f3fe',
+        10: '#dbf2fe',
         ...,
-        98: '#fffcfc',
-        '': '#d11a1e'
+        95: '#102069',
+        '@light': '$(blue-60)',
+        '@dark': '$(blue-50)'
     },
-    gray: {
-        ...
+    invert: {
+        '@light': '#000000',
+        '@dark': '#ffffff'
     },
     ...
 }
 ```
-The exported `fillColorScale(colors)` helps you fill `2~98` shades with custom colors:
+You can also access filtered hue colors:
 ```js
-import fillColorScale from '@master/colors/fill-color-scale'
-
-const customColors = fillColorScale({
-    10: '#ff3366',
-    20: '#ff4488',
-    ...
-    90: '#ff3311'
-})
+import hueColors from '@master/colors/hue'
 ```
-
-Want to upgrade to Master CSS v2? Check out the guide [Migrating from Master CSS 1.0](https://rc.css.master.co/docs/migration/v1).
+```js
+{
+    blue: {
+        5: '#e5f3fe',
+        10: '#dbf2fe',
+        ...,
+    },
+    pink: {
+        5: '#fef1f9',
+        10: '#fee9f8',
+        ...,
+    },
+    ...
+}
+```
 
 ## Community
 The Master community can be found here:

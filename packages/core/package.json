@@ -37,10 +37,10 @@
             "import": "./dist/index.mjs",
             "types": "./dist/index.d.ts"
         },
-        "./fill-color-scale": {
-            "require": "./dist/fill-color-scale.cjs",
-            "import": "./dist/fill-color-scale.mjs",
-            "types": "./dist/fill-color-scale.d.ts"
+        "./hue": {
+            "require": "./dist/hue.cjs",
+            "import": "./dist/hue.mjs",
+            "types": "./dist/hue.d.ts"
         }
     },
     "files": [
