@@ -110,24 +110,12 @@ const colors = {
         '@light': '$(white)',
         '@dark': '$(gray-95)'
     },
-    'canvas': {
-        '@light': '$(slate-5)',
-        '@dark': '$(gray-90)'
-    },
-    'surface': {
-        '@light': '$(white)',
-        '@dark': '$(gray-80)'
-    },
     'invert': {
         '@light': '#000000',
         '@dark': '#ffffff'
     },
     'white': '#ffffff',
     'black': '#000000',
-    'frame': {
-        '@light': '$(slate-60)',
-        '@dark': '$(gray-30)'
-    },
     'gray': {
         '5': '#f6f5f7',
         '10': '#efeef0',
