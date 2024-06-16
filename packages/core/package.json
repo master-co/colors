@@ -35,11 +35,6 @@
             "require": "./dist/index.cjs",
             "import": "./dist/index.mjs",
             "types": "./dist/index.d.ts"
-        },
-        "./hue": {
-            "require": "./dist/hue.cjs",
-            "import": "./dist/hue.mjs",
-            "types": "./dist/hue.d.ts"
         }
     },
     "files": [

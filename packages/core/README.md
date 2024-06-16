@@ -68,10 +68,10 @@
 </div>
 
 ## Documentation
-Visit [css.master.co/docs/colors](https://rc.css.master.co/docs/colors) to preview the all colors.
+Visit [Colors - Master CSS](https://rc.css.master.co/reference/colors) to view all colors.
 
 ## Getting Started
-Install the Master Colors v2 via package managers:
+Install the Master Colors via package managers:
 ```bash
 npm install @master/colors
 ```
@@ -79,28 +79,7 @@ Import the colors:
 ```js
 import colors from '@master/colors'
 ```
-The `colors` object contains hue colors on a scale of `5~95` and [Master CSS color variables](https://rc.css.master.co/docs/colors#add-colors-by-theme):
-```js
-{
-    blue: {
-        5: '#e5f3fe',
-        10: '#dbf2fe',
-        ...,
-        95: '#102069',
-        '@light': '$(blue-60)',
-        '@dark': '$(blue-50)'
-    },
-    invert: {
-        '@light': '#000000',
-        '@dark': '#ffffff'
-    },
-    ...
-}
-```
-You can also access filtered hue colors:
-```js
-import hueColors from '@master/colors/hue'
-```
+The `colors` object contains hue colors on a scale of `5~95`:
 ```js
 {
     blue: {
