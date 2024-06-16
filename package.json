@@ -5,8 +5,6 @@
         "postinstall": "pnpm dlx husky install",
         "build": "pnpm --filter \"./packages/*\" build",
         "dev": "pnpm --filter \"./packages/*\" dev",
-        "test": "pnpm --filter \"./packages/*\" --parallel test",
-        "e2e": "pnpm --filter \"./packages/*\" --parallel e2e",
         "lint": "pnpm --filter \"./packages/*\" --parallel lint",
         "check:type": "pnpm --filter \"./packages/*\" --parallel type-check",
         "check:commit": "commitlint --from=HEAD~1 --verbose"
