@@ -22,6 +22,7 @@
         "techor": "^3.2.3"
     },
     "devDependencies": {
+        "@eslint/compat": "^1.2.9",
         "@master/colors": "workspace:^",
         "typescript": "^5.8.3"
     }
