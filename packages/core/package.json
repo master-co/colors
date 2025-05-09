@@ -2,7 +2,7 @@
     "name": "@master/colors",
     "type": "module",
     "scripts": {
-        "build": "techor build \"src/**/*.ts\"",
+        "build": "techor build",
         "dev": "pnpm build --watch",
         "lint": "eslint src",
         "check:type": "tsc --noEmit"
@@ -26,15 +26,22 @@
         "design-system"
     ],
     "sideEffects": false,
-    "main": "./dist/index.cjs",
+    "main": "./dist/index.mjs",
     "esnext": "./dist/index.mjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "require": "./dist/index.cjs",
-            "import": "./dist/index.mjs",
+            "default": "./dist/index.mjs",
             "types": "./dist/index.d.ts"
+        },
+        "./rgb": {
+            "default": "./dist/rgb.mjs",
+            "types": "./dist/rgb.d.ts"
+        },
+        "./hsl": {
+            "default": "./dist/hsl.mjs",
+            "types": "./dist/hsl.d.ts"
         }
     },
     "files": [
