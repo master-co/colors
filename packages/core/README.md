@@ -57,7 +57,7 @@
 
 <br>
 
-<img alt="Master Colors" src="https://github.com/user-attachments/assets/a5d35051-f275-46bc-89cf-478a3df97bd4" width="100%">
+<img alt="Master Colors" src="https://raw.githubusercontent.com/master-co/colors/1afcffed9c9f3d0248b3692585eca53c6b458b0d/palette.svg" width="100%">
 
 </div>
 
