@@ -8,9 +8,9 @@
         "check:type": "tsc --noEmit"
     },
     "license": "MIT",
-    "description": "A crafted color system for beautiful user interfaces",
+    "description": "A precision-crafted P3 color system designed for modern UIs",
     "author": "Aoyue Design LLC.",
-    "homepage": "https://css.master.co/docs/colors",
+    "homepage": "https://rc.css.master.co/guide/colors",
     "bugs": {
         "url": "https://github.com/master-co/colors/issues"
     },
@@ -42,6 +42,10 @@
         "./hsl": {
             "default": "./dist/hsl.mjs",
             "types": "./dist/hsl.d.ts"
+        },
+        "./hex": {
+            "default": "./dist/hex.mjs",
+            "types": "./dist/hex.d.ts"
         }
     },
     "files": [

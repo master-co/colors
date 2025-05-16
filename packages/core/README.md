@@ -8,7 +8,7 @@
         <img alt="Master" src="https://user-images.githubusercontent.com/33840671/205238945-3295c4f5-a88a-4b58-bca9-770fe7bf894e.svg" width="100%">
     </picture>
 </p>
-<p align="center">A crafted color system for beautiful user interfaces</p>
+<p align="center">A precision-crafted P3 color system designed for modern UIs</p>
 
 <p align="center">
     <a aria-label="GitHub release (latest by date including pre-releases)" href="https://github.com/master-co/colors/releases">
@@ -57,18 +57,12 @@
 
 <br>
 
-<p align="center">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/master-co/colors/assets/33840671/7b3fc175-97d3-41bd-9d2f-a45e6ca46014">
-        <source media="(prefers-color-scheme: light)" srcset="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f">
-        <img alt="Master Colors" src="https://github.com/master-co/colors/assets/33840671/0100ad1f-133c-4901-b70e-f4879fcf920f" width="100%">
-    </picture>
-</p>
+<img alt="Master Colors" src="https://github.com/user-attachments/assets/a5d35051-f275-46bc-89cf-478a3df97bd4" width="100%">
 
 </div>
 
 ## Documentation
-Visit [Colors - Master CSS](https://rc.css.master.co/reference/colors) to view all colors.
+Visit [Colors - Master CSS](https://rc.css.master.co/guide/colors) to view all colors.
 
 ## Getting Started
 Install the Master Colors via package managers:
@@ -77,24 +71,12 @@ npm install @master/colors
 ```
 Import the colors:
 ```js
-import colors from '@master/colors'
+import colors from '@master/colors' // oklch
+import colors from '@master/colors/hsl'
+import colors from '@master/colors/hex'
+import colors from '@master/colors/rgb'
 ```
-The `colors` object contains hue colors on a scale of `5~95`:
-```js
-{
-    blue: {
-        5: '#e5f3fe',
-        10: '#dbf2fe',
-        ...,
-    },
-    pink: {
-        5: '#fef1f9',
-        10: '#fee9f8',
-        ...,
-    },
-    ...
-}
-```
+The `colors` object contains hue colors on a scale of `0, 5, ..., 100`.
 
 ## Community
 The Master community can be found here:

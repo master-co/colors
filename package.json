@@ -18,8 +18,8 @@
         "url": "https://github.com/master-co/colors.git"
     },
     "dependencies": {
-        "@techor/repo": "^3.2.3",
-        "techor": "^3.2.3"
+        "@techor/repo": "^3.2.5",
+        "techor": "^3.2.5"
     },
     "devDependencies": {
         "@eslint/compat": "^1.2.9",
